@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST">
+  <div class="mb-3">
+    <label class="form-label">Edit Item</label>
+    <input type="text" name="item" value="{{ item }}" class="form-control" required>
+  </div>
+  <button type="submit" class="btn btn-success">Save</button>
+</form>
+{% endblock %}
